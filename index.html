@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Uncompressed jQuery -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My jQuery -->
+    <script src="main.js"></script>
+
+    <!-- Chart.js (Working CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Covid-19 Info</title>
+  </head>
+  <body>
+    <!-- Main Title and  Sub-heading -->
+    <div class="container-fluid bg-light p-5 text-center my-3">
+      <h1 class="text-info">Covid-19 Info</h1>
+      <h5 class="text-muted">
+      </h5>
+      <!-- Large input -->
+      <input class="form-control form-control-lg" type="text" id="myInput" placeholder="Enter Country Name">
+      <button type="button" class="btn btn-primary"  style="text-align:center;margin: 4px 5px" id="myBtn">Search</button>
+    </div>
+
+    <!-- Total number of confirmed and all the other info -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <div class="col-3 text-warning">
+          <h5>Confirmed</h5>
+          <p id="confirmed"> </p>
+        </div>
+        <div class="col-3 text-success">
+          <h5>Recovered</h5>
+          <p id="recovered"> </p>
+        </div>
+        <div class="col-3 text-danger">
+          <h5>Deceased</h5>
+          <p id="deceased"> </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="container bg-light text-center p-3 my-5 ">
+      <h5 class="text-info">"Precaution is the Key."</h5>
+      <p class="text-muted">Stay Home Stay Safe.</p>
+    </div>
+
+    <!-- Used by Chart.js -->
+    <canvas id="myChart">
+    
+    </canvas>
+
+    <!-- Bottom Note -->
+    <div class="container text-center my-5">
+      <h6 class="text-info">
+        *Click on the Confirmed/Recovered/Deaths buttons above to see the chart
+        individually.*
+      </h6>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container text-center">
+        <span class="text-muted"
+          >Created by : XXalchemist
+      </div>
+    </footer>
+  </body>
+</html>
