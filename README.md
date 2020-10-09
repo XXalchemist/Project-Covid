@@ -6,6 +6,6 @@ Download the repo and open index.html .
 
 # Screenshots
 
-![](images/S_1.png)
+![Image - 1](images/S_1.png)
 
-![](images/screen_2.png)
+![Image - 2](images/screen_2.png)
